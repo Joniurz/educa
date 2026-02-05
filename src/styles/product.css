@@ -1,0 +1,83 @@
+#product {
+    display: flex;
+    background-color: var(--color-primary-4);
+    min-height: calc(100vh - 90px);
+    position: relative;
+}
+
+/* Bloco direito */
+#product-info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 15%;
+    z-index: 2;
+}
+
+#product-info .product-info-title {
+    font-size: 4rem;
+    color: var(--color-primary-1);
+}
+
+#product-info .product-info-description {
+    font-size: 1.2rem;
+}
+
+#product-info-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+#product-info-buttons a {
+    text-decoration: none;
+    color: var(--color-primary-1);
+    padding: 17px 100px;
+}
+
+/* Shape */
+.product-shape {
+    background-color: var(--color-primary-5);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Apresentação */
+#product-presentation {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    z-index: 2;
+}
+
+#product-presentation .product-title {
+    font-size: 4rem;
+    color: var(--color-primary-1);
+}
+
+#product-presentation .product-description {
+    font-size: 1.2rem;
+    color: var(--color-primary-1);
+}
+
+#product-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+#product-buttons a {
+    text-decoration: none;
+    color: var(--color-neutral-1);
+    padding: 17px 100px;
+}

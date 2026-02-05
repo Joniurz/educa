@@ -1,0 +1,150 @@
+.about {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 91px);
+    position: relative;
+    padding: 0 2rem;
+}
+
+#about-text {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+#about-text .section-title {
+    font-size: 4rem;
+    color: var(--color-primary-1);
+}
+
+#about-text .section-title span {
+    color: var(--color-primary-2);
+}
+
+
+#about-text .about-description {
+    font-size: 1.3rem;
+}
+
+#about-banner {
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+#about-banner img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+    object-fit: cover; /* Garantir que a img seja redimensionada sem perder a proporção*/
+}
+
+.about-image-perfil {
+    display: none;
+    width: 30%;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 100%;
+}
+
+#features {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+    margin-bottom: 32px
+}
+
+.functionality {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: var(--color-primary-3);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.features-title {
+    color: var( --color-neutral-1);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.functionality-title {
+    color: var(--color-neutral-1);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.functionality-description {
+    color: var(--color-neutral-1);
+    text-align: center;
+}
+
+.functionality-rate i {
+    color: var(--color-primary-5);
+}
+
+@media screen and (max-width: 1170px) {
+    .about-image-perfil {
+        display: block;
+        margin: 0 auto;
+    }
+   
+    #about-text {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #about-text .section-title {
+        font-size: 3rem;
+        color: var(--color-neutral-1);
+    }
+
+    #about-banner {
+        display: none;
+    }
+
+    #functionality-container {
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        width: 100%;
+    }
+
+    #features {
+        display: inline-flex;
+        gap: 1.6rem;
+    }
+
+    .functionality {
+        display: inline-block;
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #features {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .functionality {
+        width: 100%;
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
+}
+
