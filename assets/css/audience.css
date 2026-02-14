@@ -1,0 +1,37 @@
+.audience {
+    background: white;
+}
+
+.audience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.audience-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: var(--bg-body);
+    border-radius: var(--radius-md);
+    align-items: center;
+}
+
+.audience-item i {
+    color: var(--primary);
+}
+
+/* SOLUÇÕES SECUNDÁRIAS */
+.secondary-solutions {
+    background: #f1f3f5;
+}
+
+.module-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
